@@ -87,10 +87,10 @@ function pauseVideo() {
     }
     if(newPost.time!=0){
         if(newPost.status=='play'){
-            player.seekTo(newPost.time, false)
+            player.seekTo(newPost.time, true)
         }
         else if(newPost.status=='pause'){
-            player.seekTo(newPost.time, false)
+            player.seekTo(newPost.time, true)
         }
     }
 });
