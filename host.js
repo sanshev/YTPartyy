@@ -72,6 +72,7 @@ function pauseVideo() {
   function pause(){
     
     video.status='pause';
+    video.time=player.getCurrentTime();
     console.log(video.status)
     writeUserData(video)
     player.pauseVideo();
@@ -112,5 +113,3 @@ function pauseVideo() {
     }
 });
 
-
-  

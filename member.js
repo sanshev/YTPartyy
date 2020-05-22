@@ -87,7 +87,7 @@ function pauseVideo() {
     }
     if(newPost.time!=0){
         if(newPost.status=='play'){
-            player.seekTo(newPost.time, true)
+            player.seekTo(newPost.time, false)
         }
         else if(newPost.status=='pause'){
             player.seekTo(newPost.time, false)
